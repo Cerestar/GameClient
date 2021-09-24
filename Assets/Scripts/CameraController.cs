@@ -12,16 +12,16 @@ public class CameraController : MonoBehaviour
     private float horizontalRotation;
 
     private void Start() {
-        verticalRotation = transform.localEulerAngles.x;
-        horizontalRotation = player.transform.eulerAngles.y;
+        //verticalRotation = transform.localEulerAngles.x;
+        //horizontalRotation = player.transform.eulerAngles.y;
     }
 
     private void Update() {
-        Look();
+        //FPSLook();
         Debug.DrawRay(transform.position, transform.forward * 2, Color.red);
     }
 
-    private void Look() {
+    private void FPSLook() {
         float _mouseVertical = -Input.GetAxis("Mouse Y");
         float _mouseHorizontal = Input.GetAxis("Mouse X");
 
